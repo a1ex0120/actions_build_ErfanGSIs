@@ -16,12 +16,11 @@ on:
 env:
   ROM_URL: https://bigota.d.miui.com/20.1.9/miui_MI6_20.1.9_478bfa515a_9.0.zip
   ROM_NAME: MIUI
-  BUILD_TYPE: Aonly
   TZ: Asia/Shanghai
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
