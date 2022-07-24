@@ -16,12 +16,12 @@ on:
 env:
   ROM_URL: http://bigota.d.miui.com/9.9.3/miui_MI6_9.9.3_c36a83d27e_9.0.zip
   ROM_NAME: MIUI
-  BUILD_TYPE: anoly
+  BUILD_TYPE: aonly
   TZ: Asia/Shanghai
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
